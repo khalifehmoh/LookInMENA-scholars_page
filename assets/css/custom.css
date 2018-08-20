@@ -45,7 +45,7 @@
 /***********************************************************************************
  *	+ TYPOGRAPHY
  ***********************************************************************************/
- 
+
 body {
 	font: 18px 'Droid Arabic Kufi', sans-serif !important;
 	background-color: #f5f5f5;
@@ -105,6 +105,11 @@ h1 a:hover,  h2 a:hover,  h3 a:hover,  h4 a:hover,  h5 a:hover,  h6 a:hover {
 	color: #002626;
 	text-decoration: none;
 }
+
+a:hover {
+	text-decoration: none
+}
+
 h1 small,  h2 small,  h3 small,  h4 small,  h5 small,  h6 small {
 	color: inherit;
 	font-size: 85%;
@@ -117,8 +122,8 @@ p {
 
 .sub_heading {
 	font-size: 23px;
-	line-height: 26px;
-	color: #2e5353;
+	line-height: 150%;
+	color: #607676;
 }
 
 /* LINKS */
@@ -10137,12 +10142,13 @@ li .dropbtn {
 
 .sub_section .text_area {
 	display: block;
-	margin-right: 15px
+	margin-right: 20px;
+	width: 350px;
 }
 
-.sub_section img {
-	height: 12%;
-	width: 100%
+.sub_section .logo  {
+	font-size: 90px;
+	color: #124260 
 }
 
 #right_sec h4 {
@@ -10151,10 +10157,6 @@ li .dropbtn {
 	margin-bottom: 15px;
 }
 
-#right_sec  {
-	display: flex;
-	align-items: center;
-}
 
 #left_sec h4 {
 	font-size: 28px;
@@ -10167,15 +10169,10 @@ li .dropbtn {
 }
 
 .sub_section p {
-	color: #595959;
+	color: #566b6e;
 	letter-spacing: 0.3px;
 	font-size: 22px;
-}
-
-
-.sub_section .vertical_line{
-	position: absolute;
-	margin-right: -15px; 
+	margin-right: 4px;
 }
 
 @media (max-width: 576px) {
@@ -10184,23 +10181,26 @@ li .dropbtn {
 		flex-direction: column;
 		justify-content: center;
 	}
-	.sub_section img{
+	.sub_section .logo{
 		display: block;
 		margin-bottom: 15px;
 	}
 	#right_sec h4, #right_sec p{
 		display: flex;
 		justify-content: center;
-		text-align-last: center;
+		text-align: center;
 	}
 	#left_sec h4, #left_sec p{
 		display: flex;
 		justify-content: center;
-		text-align-last: center;
+		text-align: center;
 	}
-	#left_sec img{
-		margin-top: 15px;
+	#left_sec .logo{
+		margin-top: 35px;
 	}
+	.sub_section hr {
+	display: block;
+    }
 }
 /*Articles sec*/
 
@@ -10241,7 +10241,7 @@ li .dropbtn {
 
 .uni_section .sub_heading {
 	margin-top: 12px;
-	color: #595959
+	color: #566b6e
 }
 
 .uni_section p {
@@ -10378,10 +10378,15 @@ li .dropbtn {
   }
  }
 
- .mobilehomepage .col-sm-12{
- 	display: flex;
- 	justify-content: flex-end;
- }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ height: 50px;
+ width: 50px;
+}
+
+
+
+
 
 
 
