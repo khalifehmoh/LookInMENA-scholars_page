@@ -10127,6 +10127,13 @@ li .dropbtn {
 	color: #92413b
 }
 
+.more_scholars h4:hover {
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	color: #DF6F67;
+	border-color: #DF6F67;
+}
+
 .more_scholars h4 {
 	display: inline-block;
 	border-bottom: 1px #92413b solid;
@@ -10151,17 +10158,21 @@ li .dropbtn {
 	color: #124260 
 }
 
-#right_sec h4 {
+.sub_section h4 {
 	font-size: 28px;
 	border-bottom: 1px #070B22 solid; 
 	margin-bottom: 15px;
 }
 
+.sub_section h4:hover {
+	-webkit-transition: 0.3s all;
+	transition: 0.3s all;
+	color: #165982;
+	border-color: #4687B0
+}
 
-#left_sec h4 {
-	font-size: 28px;
-	border-bottom: 1px #070B22 solid; 
-	margin-bottom: 15px;
+#right_sec h4 {
+	width: 310px;
 }
 
 #left_sec a:hover, #right_sec a:hover{
@@ -10219,6 +10230,13 @@ li .dropbtn {
 	line-height: 32px;
 }
 
+.more_articles h4:hover {
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	color: #DF6F67;
+	border-color: #DF6F67;
+}
+
 /*Uni section*/
 .uni_section {
 	background-color: #e0e0e0;
@@ -10258,6 +10276,15 @@ li .dropbtn {
 	width: 4.5cm;
 	border-radius: 10px;
 	background-color: #0b2f45;
+	
+}
+
+.search_uni .search_uni_button:hover {
+	-webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+      transform: scale(1.07);
+  box-shadow: 2px 8px 5px #C7C7C7;
+	cursor: pointer
 }
 
 .search_uni .search_uni_button span {
