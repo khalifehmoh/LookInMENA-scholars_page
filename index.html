@@ -44,16 +44,16 @@
 
   gtag('config', 'UA-113878674-1');
  </script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="js/bootstrap.js"></script>
  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
  <script type="text/javascript" src="./assets/js/carousel.js"></script>
  <script type="text/javascript" src="./assets/js/mini_lib.js"></script>
  <script type="text/javascript" src="./assets/js/mini_app.js"></script>
-<script>
+ <script>
     $(document).ready(function () {
         $('.carousel').carousel();
-    });
+});
 </script>
 </head>
 <body class="sticky-header header-white scrollbar_style" ng-app="lim" id="scrollbar_style">
@@ -70,8 +70,8 @@
      <div class="col-lg-11">
        <nav><a id="mobile-menu-button" class="waves" href="#"><i class="fa fa-angle-down"></i></a>
        <ul class="main-menu">
-         <li class="dropdown">
-          <div class="dropbtn">اﻟﻤﻨﺢ 
+         <li >
+          <div>اﻟﻤﻨﺢ 
              </div>
              <div class="dropdown-content">
               <a href="https://lookinmena.com/scholarships_categories/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3/">اﺧﺮ اﻟﻤﻨﺢ اﻟﺠﺎﻣﻌﻴﺔ</a>
@@ -208,239 +208,38 @@
                       <div class="col-sm-12">
                           <div class="tabs style-3">
                               <ul class="nav nav-tabs items-3">
-                                  <li class=""><a class="waves" href="#tab-1-1" data-toggle="tab" aria-expanded="true"><h4>اﻟﻤﻨﺢ</h4></a></li>
-                                  <!-- <li class="hidden"><a class="waves" href="#tab-1-2" data-toggle="tab" aria-expanded="false"><h4>اﻷﻧﺸﻄﺔ </h4><small>ﻭاﻟﻔﻌﺎﻟﻴﺎﺕ</small></a></li> -->
-                                  <li class=""><a class="waves" href="#tab-1-4" data-toggle="tab" aria-expanded="false"><h4>اﻟﻤﻘﺎﻻﺕ</h4></a></li>
-                                  <li class=""><a class="waves" href="#tab-1-3" data-toggle="tab" aria-expanded="false"><h4>ﺟﺎﻣﻌﺎﺕ اﻟﻤﻴﻨﺎ</h4></a></li>
-                              </ul>
-                              <div class="tab-content">
-                                  <div class="tab-pane fade  in" id="tab-1-1">
-                                      <div class="row">
-                                          <div class="col-sm-4"> <!-- here -->
-                                              <h4>اﻟﺪﺭاﺳﺔ اﻟﺠﺎﻣﻌﻴﺔ</h4>
-                                              <p>ﺃﻛﺜﺮ ﻣﻦ 4,000 ﺷﺨﺺ اﺳﺘﻔﺎﺩﻭا ﻣﻦ ﻓﺮﺹ اﻟﻤﻨﺢ ﻭاﻟﺪﺭاﺳﺔ اﻟﺠﺎﻣﻌﻴﺔ ﻟﻴﻨﻄﻠﻘﻮا ﻣﻦ ﻫﺬا اﻟﻤﻜﺎﻥ ﻧﺤﻮ ﺃﻫﻢ اﻟﺠﺎﻣﻌﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ..</p>
-                                              <p class="text-center"> ﻭﺃﻧﺖ ﻣﺎﺫا ﺗﻨﺘﻈﺮ؟</p>
-                                              <p class="text-center">ﺣﺪﺩّ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ!</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-                                                  <li class="modall"  ng-click="open_cats_popup('scholarships')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves search" href="#recent-scholars">
-                                                              <div class="service-box-content"> <i class="fa fa-university" ></i>
-                                                                  <h6>اﺧﺮ اﻟﻤﻨﺢ اﻟﺠﺎﻣﻌﻴﺔ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-               
-                                                          </a>
-                                                          <div id="recent-scholars" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻟﻤﻨﺢ اﻟﺪﺭاﺳﻴﺔ</h3>
-
-                                                                          <p>اﺧﺘﺮ اﻟﺪﺭﺟﺔ اﻟﺪﺭاﺳﻴﺔ ﻭاﻛﺘﺸﻒ</p>
-
-                                                                          <br>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3/">ﺑﻜﺎﻟﻮﺭﻳﻮﺱ</a><br>
-                                                                          </div>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/master/">ﻣﺎﺟﺴﺘﻴﺮ</a><br>
-                                                                          </div>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87/">ﺩﻛﺘﻮﺭاﻩ</a><br>
-                                                                          </div>
-                                                                          
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/scholarships.jpg"></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <li class="modall" ng-click="open_cats_popup()">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="#schol_articles">
-                                                              <div class="service-box-content"> <i class="fa  fa-file"></i>
-                                                                  <h6>ﻧﺼﺎﺋﺢ ﻭﺗﺠﺎﺭﺏ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                          <div id="schol_articles" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻗﺮﺃ ﻭاﺳﺘﻜﺸﻒ</h3>
-
-                                                                          <p>اﺧﺘﺼﺎﺻﺎﺕ اﻟﻤﻨﺢ</p>
-
-                                                                          <br>
-                                                                          
-                                                                          <select onchange="location = this.value;">
-                                                                              <option value="" selected>اﺧﺘﺮ اﻟﻘﺴﻢ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/global_lan_diplomas/">ﺷﻬﺎﺩاﺕ اﻟﻠﻐﺔ اﻟﻌﺎﻟﻤﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/scholarship_guid/">ﺩﻟﻴﻞ اﻟﺤﺼﻮﻝ ﻋﻠﻰ ﻣﻨﺤﺔ ﺩﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/study_in_turkey/">اﻟﺪﺭاﺳﺔ ﻓﻲ ﺗﺮﻛﻴﺎ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/annual_scholarships/">ﺃﺷﻬﺮ اﻟﻤﻨﺢ اﻟﺴﻨﻮﻳﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/life_in_europe/">اﻟﻤﻌﻴﺸﺔ ﻭاﻟﺤﻴﺎﺓ ﻓﻲ ﺃﻭﺭﻭﺑﺎ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/succeed_experiments/">ﺗﺠﺎﺭﺏ ﻧﺎﺟﺤﺔ ﺑﺎﻟﺤﺼﻮﻝ ﻋﻠﻰ ﻣﻨﺤﺔ ﺩﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/global_universities/">اﻟﺠﺎﻣﻌﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/study-abroad/">اﻟﺪﺭاﺳﺔ ﻓﻲ اﻟﺨﺎﺭﺝ</option>
-                                                                          </select>
-                                                                          <!-- <button class="btn btn-default-1 waves" ng-click="direct_article_cat('scholarships')">اﻧﻄﻠﻖ</button> -->
-
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/scholarships.jpg)"></div>
-
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a> 
-                                                      </div>
-                                                  </li> -->
-                                                
-                                              </ul>
-                                          </div>
+                                  <li><a data-fancybox data-src="#hidden_content" href="javascript:;"><h4>اﻟﻤﻨﺢ</h4></a>
+                                    <div id="hidden_content" style="display: none; width: 1000px;height: auto; direction: rtl;">
+                                      <div class="fancybox-content">
+                                      <div class="pop_up_img">
+                                          <img src="./assets/img/pop_up.jpg">
                                       </div>
+                                      <div class="pop_up_text mr-4 mt-4 pb-2">
+                                        <div class="popup_heading">
+                                          <h3> اﻟﻤﻨﺢ اﻟﺪﺭاﺳﻴﺔ</h3>
+                                          <p>اﺧﺘﺮ اﻟﺪﺭﺟﺔ اﻟﺪﺭاﺳﻴﺔ ﻭاﻛﺘﺸﻒ:</p>
+                                        </div>
+                                          <div class="grades">
+                                            <div>
+                                                <a href="https://lookinmena.com/scholarships_categories/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3/"><h4>ﺑﻜﺎﻟﻮﺭﻳﻮﺱ</h4></a><br>
+                                            </div>
+                                            <div>
+                                                <a  href="https://lookinmena.com/scholarships_categories/master/"><h4>ﻣﺎﺟﺴﺘﻴﺮ</h4></a><br>
+                                            </div>
+                                            <div>
+                                                <a  href="https://lookinmena.com/scholarships_categories/%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87/"><h4>ﺩﻛﺘﻮﺭاﻩ</h4></a><br>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                   </div>
-                                  <!-- tab-pane -->
+                                </li>
                                   
-                                  <!-- tab-pane  -->
-                                  <div class="tab-pane fade" id="tab-1-4">
-                                      <div class="row">
-                                          <div class="col-sm-4">
-                                              <h4>اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</h4>
-                                              <p class="text-center">اﻟﺘﺤﺪّﻱ ﻭاﻟﻤﻨﺎﻓﺴﺔ ﺧُﻠﻘﻮا ﻷﺻﺤﺎﺏ اﻹﺭاﺩﺓ ﻭﻣﺤﺒﻲ اﻟﻤﻐﺎﻣﺮاﺕ..</p>
-                                              <p class="text-center">ﻭﻓﺮﺹ اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ ﻫﻨﺎ ﻟﺘﺘﺤﺪّﻯ ﻧﻔﺴﻚ ﻭﺗﺴﺘﺜﻤﺮ ﻣﻮاﻫﺒﻚ ﻋﺎﻟﻤﻴﺎً ﻓﻤﻦ ﻳﻌﻠﻢ ﺭﺑﻤﺎ ﺃﻭﻟﻰ ﺧﻄﻮاﺕ ﻓﻮﺯﻙ ﺗﻨﺘﻈﺮﻙ ﺑﻬﺬا اﻟﻤﻜﺎﻥ!</p>
-                                              <p class="text-center">ﺣﺪّﺩ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-                                                  <li class="modall"  ng-click="open_cats_popup('online_activities')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves search" href="https://lookinmena.com/online_activities_categories/all/">
-                                                              <div class="service-box-content"> <i class="fa fa-paint-brush" ></i>
-                                                                  <h6>ﺁﺧﺮ اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a> 
-                                                      </div>
-                                                  </li> -->
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- tab-pane --> 
-                                   <!-- tab-pane  -->
-                                  <div class="tab-pane fade  in" id="tab-1-3">
-                                      <div class="row">
-                                          <div class="col-sm-4">
-                                              <h4>اﻟﻔﺮﺹ اﻟﺘﻌﻠﻴﻤﻴﺔ ﻭاﻟﺘﺪﺭﻳﺒﻴﺔ</h4>
-                                              <p>60% ﻣﻦ اﻟﻤﻬﺎﺭاﺕ اﻟﻌﻤﻠﻴّﺔ اﻟﻤﻄﻠﻮﺑﺔ ﻟﺴﻮﻕ اﻟﻌﻤﻞ ﻻ ﻳﺘﻢ ﺗﺪﺭﻳﺴﻬﺎ ﻓﻲ اﻟﺠﺎﻣﻌﺔ، ﺑﻞ ﻋﻠﻴﻚ ﺃﻧﺖ ﺷﺨﺼﻴﺎً ﺗﻨﻤﻴﺔ ﻣﻬﺎﺭاﺗﻚ ﺑﻨﻔﺴﻚ ﻣﻦ ﺧﻼﻝ اﺳﺘﻐﻼﻝ ﻓﺮﺹ اﻟﺪﻭﺭاﺕ ﻭاﻟﻮﺭﺵ اﻟﺘّﻌﻠﻴﻤﻴﺔ ﻟﺘﻨﻄﻠﻖ ﻣﻦ ﻫﺬا اﻟﻤﻜﺎﻥ ﻧﺤﻮ ﺃﺣﻼﻣﻚ.</p>
-                                              <p class="text-center">ﺣﺪّﺩ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ!</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-
-                                                  <li class="modall" ng-click="open_cats_popup('online_courses')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="https://lookinmena.com/online_courses_categories/all/">
-                                                              <div class="service-box-content"> <i class="fa fa-book"></i>
-                                                                  <h6>ﺁﺧﺮ اﻟﻔﺮﺹ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <li class="modall" ng-click="open_cats_popup()">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="#courses_articles">
-                                                              <div class="service-box-content"> <i class="fa  fa-file"></i>
-                                                                  <h6> ﻧﺼﺎﺋﺢ ﻭﺗﺠﺎﺭﺏ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                          <div id="courses_articles" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻗﺮﺃ ﻭاﺳﺘﻜﺸﻒ</h3>
-
-                                                                          <p>اﺧﺘﺼﺎﺻﺎﺕ اﻟﺪﻭﺭاﺕ</p>
-
-                                                                          <br>
-
-                                                                          <select onchange="location = this.value;">
-                                                                              <option value="" selected>اﺧﺘﺮ اﻟﻘﺴﻢ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/academic_specialties/">اﻻﺧﺘﺼﺎﺻﺎﺕ اﻟﺪﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/learning-languages/">اﻟﺪﻟﻴﻞ اﻟﺸﺎﻣﻞ ﻟﺘﻌﻠّﻢ اﻟﻠﻐﺎﺕ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/wiki_lim/">Wiki LiM</option>
-                                                                          </select>
-
-
-                                                                          <!-- <button class="btn btn-default-1 waves" ng-click="direct_article_cat('courses')">اﻧﻄﻠﻖ</button> -->
-
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/courses.jpg)"></div>
-
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a>
-                                                      </div>
-                                                  </li> -->
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                              </div>
+                                  <!-- <li class="hidden"><a class="waves" href="#tab-1-2" data-toggle="tab" aria-expanded="false"><h4>اﻷﻧﺸﻄﺔ </h4><small>ﻭاﻟﻔﻌﺎﻟﻴﺎﺕ</small></a></li> -->
+                                  <li><a href="https://lookinmena.com/category/university_study/" ><h4>اﻟﻤﻘﺎﻻﺕ</h4></a></li>
+                                  <li><a href="add uni link" ><h4>ﺟﺎﻣﻌﺎﺕ اﻟﻤﻴﻨﺎ</h4></a></li>
+                              </ul>
+                              
                               <!-- tab-content --> 
 
                           </div>
@@ -449,6 +248,8 @@
                       </div>
                       <!-- tabs --> 
                   </div>
+                  <br>
+                  <br>
 
                   <!-- col --> 
               </div>
@@ -459,239 +260,35 @@
                       <div class="col-lg-1">
                           <div class="tabs style-3">
                               <ul class="nav nav-tabs items-3 mr-4">
-                                  <li class=""><a class="waves d-flex justify-content-flex-start " href="#tab-1-1" data-toggle="tab" aria-expanded="true"><h4>- اﻟﻤﻨﺢ</h4></a></li>
-                                  <!-- <li class="hidden"><a class="waves" href="#tab-1-2" data-toggle="tab" aria-expanded="false"><h4>اﻷﻧﺸﻄﺔ </h4><small>ﻭاﻟﻔﻌﺎﻟﻴﺎﺕ</small></a></li> -->
-                                  <li class=""><a class="waves d-flex justify-content-flex-start" href="#tab-1-4" data-toggle="tab" aria-expanded="false"><h4>- اﻟﻤﻘﺎﻻﺕ</h4></a></li>
-                                  <li class=""><a class="waves d-flex justify-content-flex-start" href="#tab-1-3" data-toggle="tab" aria-expanded="false"><h4>- ﺟﺎﻣﻌﺎﺕ اﻟﻤﻴﻨﺎ</h4></a></li>
+                                  <li class=""><a class="d-flex justify-content-flex-start" data-fancybox data-src="#hidden_content" href="javascript:;" ><h4>- اﻟﻤﻨﺢ</h4></a>
+                                  <div id="hidden_content" style="display: none; width: 1000px;height: auto; direction: rtl;">
+                                      <div class="fancybox-content">
+                                      <div class="pop_up_img">
+                                          <img src="./assets/img/pop_up.jpg">
+                                      </div>
+                                      <div class="pop_up_text mr-4 mt-4 pb-2">
+                                        <div class="popup_heading">
+                                          <h3> اﻟﻤﻨﺢ اﻟﺪﺭاﺳﻴﺔ</h3>
+                                          <p>اﺧﺘﺮ اﻟﺪﺭﺟﺔ اﻟﺪﺭاﺳﻴﺔ ﻭاﻛﺘﺸﻒ:</p>
+                                        </div>
+                                          <div class="grades">
+                                            <div>
+                                                <a href="https://lookinmena.com/scholarships_categories/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3/"><h4>ﺑﻜﺎﻟﻮﺭﻳﻮﺱ</h4></a><br>
+                                            </div>
+                                            <div>
+                                                <a  href="https://lookinmena.com/scholarships_categories/master/"><h4>ﻣﺎﺟﺴﺘﻴﺮ</h4></a><br>
+                                            </div>
+                                            <div>
+                                                <a  href="https://lookinmena.com/scholarships_categories/%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87/"><h4>ﺩﻛﺘﻮﺭاﻩ</h4></a><br>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div></li>
+                                  <li class=""><a class=" d-flex justify-content-flex-start" href="https://lookinmena.com/category/university_study/" ><h4>- اﻟﻤﻘﺎﻻﺕ</h4></a></li>
+                                  <li class=""><a class=" d-flex justify-content-flex-start" href="add uni link" ><h4>- ﺟﺎﻣﻌﺎﺕ اﻟﻤﻴﻨﺎ</h4></a></li>
                               </ul>
-                              <div class="tab-content">
-                                  <div class="tab-pane fade  in" id="tab-1-1">
-                                      <div class="row">
-                                          <div class="col-sm-4"> <!-- here -->
-                                              <h4>اﻟﺪﺭاﺳﺔ اﻟﺠﺎﻣﻌﻴﺔ</h4>
-                                              <p>ﺃﻛﺜﺮ ﻣﻦ 4,000 ﺷﺨﺺ اﺳﺘﻔﺎﺩﻭا ﻣﻦ ﻓﺮﺹ اﻟﻤﻨﺢ ﻭاﻟﺪﺭاﺳﺔ اﻟﺠﺎﻣﻌﻴﺔ ﻟﻴﻨﻄﻠﻘﻮا ﻣﻦ ﻫﺬا اﻟﻤﻜﺎﻥ ﻧﺤﻮ ﺃﻫﻢ اﻟﺠﺎﻣﻌﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ..</p>
-                                              <p class="text-center"> ﻭﺃﻧﺖ ﻣﺎﺫا ﺗﻨﺘﻈﺮ؟</p>
-                                              <p class="text-center">ﺣﺪﺩّ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ!</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-                                                  <li class="modall"  ng-click="open_cats_popup('scholarships')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves search" href="#recent-scholars">
-                                                              <div class="service-box-content"> <i class="fa fa-university" ></i>
-                                                                  <h6>اﺧﺮ اﻟﻤﻨﺢ اﻟﺠﺎﻣﻌﻴﺔ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-               
-                                                          </a>
-                                                          <div id="recent-scholars" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻟﻤﻨﺢ اﻟﺪﺭاﺳﻴﺔ</h3>
-
-                                                                          <p>اﺧﺘﺮ اﻟﺪﺭﺟﺔ اﻟﺪﺭاﺳﻴﺔ ﻭاﻛﺘﺸﻒ</p>
-
-                                                                          <br>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D9%88%D8%B3/">ﺑﻜﺎﻟﻮﺭﻳﻮﺱ</a><br>
-                                                                          </div>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/master/">ﻣﺎﺟﺴﺘﻴﺮ</a><br>
-                                                                          </div>
-                                                                          <div>
-                                                                              <a class="btn btn-default-1 waves" href="https://lookinmena.com/scholarships_categories/%D8%AF%D9%83%D8%AA%D9%88%D8%B1%D8%A7%D9%87/">ﺩﻛﺘﻮﺭاﻩ</a><br>
-                                                                          </div>
-                                                                          
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/scholarships.jpg"></div>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <li class="modall" ng-click="open_cats_popup()">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="#schol_articles">
-                                                              <div class="service-box-content"> <i class="fa  fa-file"></i>
-                                                                  <h6>ﻧﺼﺎﺋﺢ ﻭﺗﺠﺎﺭﺏ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                          <div id="schol_articles" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻗﺮﺃ ﻭاﺳﺘﻜﺸﻒ</h3>
-
-                                                                          <p>اﺧﺘﺼﺎﺻﺎﺕ اﻟﻤﻨﺢ</p>
-
-                                                                          <br>
-                                                                          
-                                                                          <select onchange="location = this.value;">
-                                                                              <option value="" selected>اﺧﺘﺮ اﻟﻘﺴﻢ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/global_lan_diplomas/">ﺷﻬﺎﺩاﺕ اﻟﻠﻐﺔ اﻟﻌﺎﻟﻤﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/scholarship_guid/">ﺩﻟﻴﻞ اﻟﺤﺼﻮﻝ ﻋﻠﻰ ﻣﻨﺤﺔ ﺩﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/study_in_turkey/">اﻟﺪﺭاﺳﺔ ﻓﻲ ﺗﺮﻛﻴﺎ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/annual_scholarships/">ﺃﺷﻬﺮ اﻟﻤﻨﺢ اﻟﺴﻨﻮﻳﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/life_in_europe/">اﻟﻤﻌﻴﺸﺔ ﻭاﻟﺤﻴﺎﺓ ﻓﻲ ﺃﻭﺭﻭﺑﺎ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/succeed_experiments/">ﺗﺠﺎﺭﺏ ﻧﺎﺟﺤﺔ ﺑﺎﻟﺤﺼﻮﻝ ﻋﻠﻰ ﻣﻨﺤﺔ ﺩﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/global_universities/">اﻟﺠﺎﻣﻌﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/university_study/study-abroad/">اﻟﺪﺭاﺳﺔ ﻓﻲ اﻟﺨﺎﺭﺝ</option>
-                                                                          </select>
-                                                                          <!-- <button class="btn btn-default-1 waves" ng-click="direct_article_cat('scholarships')">اﻧﻄﻠﻖ</button> -->
-
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/scholarships.jpg)"></div>
-
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a> 
-                                                      </div>
-                                                  </li> -->
-                                                
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- tab-pane -->
-                                  
-                                  <!-- tab-pane  -->
-                                  <div class="tab-pane fade" id="tab-1-4">
-                                      <div class="row">
-                                          <div class="col-sm-4">
-                                              <h4>اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</h4>
-                                              <p class="text-center">اﻟﺘﺤﺪّﻱ ﻭاﻟﻤﻨﺎﻓﺴﺔ ﺧُﻠﻘﻮا ﻷﺻﺤﺎﺏ اﻹﺭاﺩﺓ ﻭﻣﺤﺒﻲ اﻟﻤﻐﺎﻣﺮاﺕ..</p>
-                                              <p class="text-center">ﻭﻓﺮﺹ اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ ﻫﻨﺎ ﻟﺘﺘﺤﺪّﻯ ﻧﻔﺴﻚ ﻭﺗﺴﺘﺜﻤﺮ ﻣﻮاﻫﺒﻚ ﻋﺎﻟﻤﻴﺎً ﻓﻤﻦ ﻳﻌﻠﻢ ﺭﺑﻤﺎ ﺃﻭﻟﻰ ﺧﻄﻮاﺕ ﻓﻮﺯﻙ ﺗﻨﺘﻈﺮﻙ ﺑﻬﺬا اﻟﻤﻜﺎﻥ!</p>
-                                              <p class="text-center">ﺣﺪّﺩ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-                                                  <li class="modall"  ng-click="open_cats_popup('online_activities')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves search" href="https://lookinmena.com/online_activities_categories/all/">
-                                                              <div class="service-box-content"> <i class="fa fa-paint-brush" ></i>
-                                                                  <h6>ﺁﺧﺮ اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a> 
-                                                      </div>
-                                                  </li> -->
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- tab-pane --> 
-                                   <!-- tab-pane  -->
-                                  <div class="tab-pane fade  in" id="tab-1-3">
-                                      <div class="row">
-                                          <div class="col-sm-4">
-                                              <h4>اﻟﻔﺮﺹ اﻟﺘﻌﻠﻴﻤﻴﺔ ﻭاﻟﺘﺪﺭﻳﺒﻴﺔ</h4>
-                                              <p>60% ﻣﻦ اﻟﻤﻬﺎﺭاﺕ اﻟﻌﻤﻠﻴّﺔ اﻟﻤﻄﻠﻮﺑﺔ ﻟﺴﻮﻕ اﻟﻌﻤﻞ ﻻ ﻳﺘﻢ ﺗﺪﺭﻳﺴﻬﺎ ﻓﻲ اﻟﺠﺎﻣﻌﺔ، ﺑﻞ ﻋﻠﻴﻚ ﺃﻧﺖ ﺷﺨﺼﻴﺎً ﺗﻨﻤﻴﺔ ﻣﻬﺎﺭاﺗﻚ ﺑﻨﻔﺴﻚ ﻣﻦ ﺧﻼﻝ اﺳﺘﻐﻼﻝ ﻓﺮﺹ اﻟﺪﻭﺭاﺕ ﻭاﻟﻮﺭﺵ اﻟﺘّﻌﻠﻴﻤﻴﺔ ﻟﺘﻨﻄﻠﻖ ﻣﻦ ﻫﺬا اﻟﻤﻜﺎﻥ ﻧﺤﻮ ﺃﺣﻼﻣﻚ.</p>
-                                              <p class="text-center">ﺣﺪّﺩ ﻫﺪﻓﻚ ﻭاﻧﻄﻠﻖ!</p>
-                                          </div>
-                                          <div class="col-sm-8">
-                                              <ul class="services-list items-7 wow " style="visibility: visible; animation-name: fadeInUp;">
-
-                                                  <li class="modall" ng-click="open_cats_popup('online_courses')">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="https://lookinmena.com/online_courses_categories/all/">
-                                                              <div class="service-box-content"> <i class="fa fa-book"></i>
-                                                                  <h6>ﺁﺧﺮ اﻟﻔﺮﺹ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <li class="modall" ng-click="open_cats_popup()">
-                                                      <div class="service-box style-5"> 
-                                                          <a class="waves" href="#courses_articles">
-                                                              <div class="service-box-content"> <i class="fa  fa-file"></i>
-                                                                  <h6> ﻧﺼﺎﺋﺢ ﻭﺗﺠﺎﺭﺏ</h6>
-                                                              </div>
-                                                              <!-- service-box-content --> 
-                                                          </a>
-                                                          <div id="courses_articles" class="popup">
-                                                              <div class="container">
-                                                                  <div class="image-box">
-
-                                                                      <div class="image-box-details">
-
-                                                                          <h3> اﻗﺮﺃ ﻭاﺳﺘﻜﺸﻒ</h3>
-
-                                                                          <p>اﺧﺘﺼﺎﺻﺎﺕ اﻟﺪﻭﺭاﺕ</p>
-
-                                                                          <br>
-
-                                                                          <select onchange="location = this.value;">
-                                                                              <option value="" selected>اﺧﺘﺮ اﻟﻘﺴﻢ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/academic_specialties/">اﻻﺧﺘﺼﺎﺻﺎﺕ اﻟﺪﺭاﺳﻴﺔ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/learning-languages/">اﻟﺪﻟﻴﻞ اﻟﺸﺎﻣﻞ ﻟﺘﻌﻠّﻢ اﻟﻠﻐﺎﺕ</option>
-                                                                              <option value="https://lookinmena.com/category/courses/wiki_lim/">Wiki LiM</option>
-                                                                          </select>
-
-
-                                                                          <!-- <button class="btn btn-default-1 waves" ng-click="direct_article_cat('courses')">اﻧﻄﻠﻖ</button> -->
-
-                                                                      </div><!-- image-box-details -->
-
-                                                                      <div class="image-box-thumbnail" style="background-image: url(./assets/img/courses.jpg)"></div>
-
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <!-- service-box --> 
-
-                                                  </li>
-                                                  <!-- <li class="modall">
-                                                      <div class="service-box style-5">
-                                                          <a class="waves" href="#">
-                                                              <div class="service-box-content"> <i class="fa fa-search "></i>
-                                                                  <h6>اﺑﺤﺚ ﻋﻦ ﺟﺎﻣﻌﺔ</h6>
-                                                              </div>
-                                                          </a>
-                                                      </div>
-                                                  </li> -->
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                              </div>
+                              
                               <!-- tab-content --> 
 
                           </div>
@@ -700,6 +297,8 @@
                       </div>
                       <!-- tabs --> 
                   </div>
+                  <br>
+                  <br>
           </div>
 
       <!-- container --> 
@@ -835,19 +434,18 @@
             <i class="fas fa-school"></i>
           </div>
           <div class="text_area">
-           <a href=""><h4>ﺩﻟﻴﻠﻚ ﻟﻠﺤﺼﻮﻝ ﻋﻠﻰ اﻟﻤﻨﺢ</h4></a>
+           <a href="https://lookinmena.com/category/university_study/scholarship_guid/"><h4>ﺩﻟﻴﻠﻚ ﻟﻠﺤﺼﻮﻝ ﻋﻠﻰ اﻟﻤﻨﺢ</h4></a>
            <p>ﺗﻌﺮﻑ ﻋﻠﻰ ﻛﻴﻔﻴﺔ ﺣﺼﻮﻟﻚ ﻋﻠﻰ اﻟﻤﻨﺢ ﻣﻦ ﺧﻼﻝ ﻫﺬا اﻟﺪﻟﻴﻞ</p>
           </div>
         </div>
-        <hr class="hidden_line">
         
         <div class="col-sm-6 d-flex align-items-center" id="left_sec">
           <div class="logo">
             <i class="fas fa-user-graduate"></i>
           </div>
           <div class="text_area">
-            <a href=""><h4>ﺗﺠﺎﺭﺏ ﻟﻄﻼﺏ ﺣﺼﻠﻮ ﻋﻠﻰ ﻣﻨﺢ</h4></a>
-            <p>ﺗﺼﻔﺢ اﺧﺮ اﻟﻤﻘﺎﻻﺕ اﻟﺘﻲ  اﻋﺪﺩﻧﺎﻫﺎ ﺧﺼﻴﺼﺎ ﻟﻚ ﻛﻄﺎﻟﺐ ﺟﺎﻣﻌﻲ</p>
+            <a href="https://lookinmena.com/category/university_study/succeed_experiments/"><h4>ﺗﺠﺎﺭﺏ ﻟﻄﻼﺏ ﺣﺼﻠﻮ ﻋﻠﻰ ﻣﻨﺢ</h4></a>
+            <p>ﺗﻌﻠﻢ ﻣﻦ ﺗﺠﺎﺭﺏ ﺳﺎﺑﻘﺔ ﻟﻄﻼﺏ ﺣﺼﻠﻮ ﻋﻠﻰ ﻣﻨﺢ</p>
           </div>
         </div>
       </div>
@@ -962,7 +560,7 @@
   </div>
   <div class="row more">
          <div class="more_articles">
-           <a href=""><h4>اﻟﻤﺰﻳﺪ ﻣﻦ اﻟﻤﻘﺎﻻﺕ</h4></a>
+           <a href="https://lookinmena.com/category/university_study/"><h4>اﻟﻤﺰﻳﺪ ﻣﻦ اﻟﻤﻘﺎﻻﺕ</h4></a>
          </div>
   </div>
   <br>
@@ -977,10 +575,10 @@
        <div class="title">
         <div class="heading">
          <span><img src="./assets/img/uni_mena.png"></span>
-         <h3>جامعات المينا</h3>
+         <h3>ﺟﺎﻣﻌﺎﺕ اﻟﻤﻴﻨﺎ</h3>
          <span><img src="./assets/img/uni_mena.png"></span>
         </div>
-         <h5 class="sub_heading">ابحث و اعرف اكثر عن الجامعات الموجودة في منطقة المينا من خلال دليلنا الشامل  للجامعات<p></p>
+         <h5 class="sub_heading">اﺑﺤﺚ ﻭ اﻋﺮﻑ اﻛﺜﺮ ﻋﻦ اﻟﺠﺎﻣﻌﺎﺕ اﻟﻤﻮﺟﻮﺩﺓ ﻓﻲ ﻣﻨﻄﻘﺔ اﻟﻤﻴﻨﺎ ﻣﻦ ﺧﻼﻝ ﺩﻟﻴﻠﻨﺎ اﻟﺸﺎﻣﻞ  ﻟﻠﺠﺎﻣﻌﺎﺕ<p></p>
        </div>
       </div> 
      </div>
@@ -989,7 +587,7 @@
       <div class="col-sm-12"> 
        <div class="search_uni">
         <a href=""><button class="search_uni_button">
-           <span>ابحث</span>
+           <span>اﺑﺤﺚ</span>
            <span><img src="./assets/img/search_uni.png"></span>
          </button>
         </a>
@@ -1074,6 +672,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/jquery.fancybox.min.js"></script>
 </div></div></div></body>
 </html>
 
