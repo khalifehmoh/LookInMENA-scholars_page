@@ -306,7 +306,7 @@ h2 {
 	line-height: 42px;
 }
 h3 {
-	font-size: 26px;
+	font-size: 29px;
 	line-height: 36px;
 }
 .scholarship-icon {
@@ -10160,7 +10160,7 @@ li .dropbtn {
 }
 
 .sub_section h4 {
-	font-size: 28px;
+	font-size: 26px;
 	border-bottom: 1px #070B22 solid; 
 	margin-bottom: 15px;
 }
@@ -10188,7 +10188,8 @@ li .dropbtn {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding-left: 40px;
+		padding: 0px;
+		padding-left: 20px;
 	}
 	.sub_section .logo{
 		display: block;
@@ -10210,6 +10211,63 @@ li .dropbtn {
 	.sub_section hr {
 	display: block;
     }
+    .sub_section h4 {
+	font-size: 26px;
+	}
+	.sub_section p {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.sub_section .row{
+		display: flex;
+		flex-direction: column;
+		overflow: all;
+		align-items: center;
+	}
+	.sub_section .col-sm-6 {
+		max-height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.sub_section .logo{
+		display: block;
+		margin-bottom: 15px;
+	}
+	#right_sec h4, #right_sec p{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	#left_sec h4, #left_sec p{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	#left_sec .logo{
+		margin-top: 35px;
+	}
+	.sub_section hr {
+	display: block;
+    }
+    .sub_section h4 {
+	font-size: 26px;
+	}
+	.sub_section p {
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+}
+
+@media (max-width: 992px) {
+	#right_sec h4 {
+		margin-top: 40px;
+	}
 }
 /*Articles sec*/
 
@@ -10251,8 +10309,8 @@ li .dropbtn {
 	margin-top: 58px;
 }
 
-.heading img {
-	padding-bottom: 20px;
+.heading .fa-university {
+	font-size: 47px;
 }
 
 .uni_section .sub_heading {
@@ -10274,7 +10332,10 @@ li .dropbtn {
 	width: 4.5cm;
 	border-radius: 10px;
 	background-color: #0b2f45;
-	
+}
+
+.search_uni .fa-search{
+	color: lightgrey
 }
 
 .search_uni .search_uni_button:hover {
