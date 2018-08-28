@@ -10264,9 +10264,14 @@ li .dropbtn {
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 768px) {
 	#right_sec h4 {
 		margin-top: 40px;
+	}
+}
+@media (width: 768px) {
+	#right_sec h4 {
+		margin-top: 0px;
 	}
 }
 /*Articles sec*/
@@ -10352,6 +10357,12 @@ li .dropbtn {
 
 .search_uni .search_uni_button img {
 	padding-top: 5px;
+}
+
+@media (max-width: 576px) {
+	.uni_section h3 {
+		margin: auto 15px;
+	}
 }
 
 /*Carousel*/
